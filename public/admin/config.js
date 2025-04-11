@@ -2,8 +2,10 @@ CMS.init({
   config: {
     backend: {
       name: "github",
-      repo: "YOUR_GITHUB_USERNAME/YOUR_REPO_NAME",
+      repo: "myronschram/cure-engine-site",
       branch: "main",
+      auth_scope: "repo",
+      client_id: "Ov23lil0jspiuuNxXNo6",
     },
     media_folder: "public/uploads",
     public_folder: "/uploads",
@@ -16,12 +18,12 @@ CMS.init({
         slug: "{{slug}}",
         fields: [
           { label: "Title", name: "title", widget: "string" },
-          { label: "Author", name: "author", widget: "string", default: "Myron Schram" },
+          { label: "Author", name: "author", widget: "string" },
           { label: "Date", name: "date", widget: "datetime" },
           { label: "Tags", name: "tags", widget: "list" },
-          { label: "Body", name: "body", widget: "markdown" },
-        ],
-      },
-    ],
-  },
+          { label: "Body", name: "body", widget: "markdown" }
+        ]
+      }
+    ]
+  }
 });
