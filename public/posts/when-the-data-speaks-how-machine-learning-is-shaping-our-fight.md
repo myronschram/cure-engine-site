@@ -39,7 +39,7 @@ recognize non-obvious relationships between input variables like CAR binding
 affinity, tumor microenvironment characteristics, and T-cell exhaustion
 thresholds.
 
-[Alt text goes here](/uploads/Engineering _a_Learning_System.png)
+![Alt text goes here](/uploads/Engineering _a_Learning_System.png)
 
 ## Millions of Iterations, Hundreds of
 Permutations Per Case
@@ -78,7 +78,7 @@ This feedback loop operates continuously, acting as a living model that gets
 better with every new case, and more cautious with every missed expectation.
 It’s not enough to be predictive. We have to be adaptive.
 
-[Alt text goes here](/uploads/Adaptive_Feedback_Loop.png)
+![Alt text goes here](/uploads/Adaptive_Feedback_Loop.png)
 
 ## From Forecast to Frontline
 
@@ -99,7 +99,7 @@ These insights help clinicians build personalized protocols, increase patient
 safety, and improve long-term response potential—all before a single drop of
 treatment enters a patient’s bloodstream.
 
-[Alt text goes here](/uploads/Forecast_to_Frontline.png)
+![Alt text goes here](/uploads/Forecast_to_Frontline.png)
 
 ## AI as Assistant, Not Authority
 
