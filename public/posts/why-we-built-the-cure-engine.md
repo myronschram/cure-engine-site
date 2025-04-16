@@ -1,6 +1,6 @@
 ---
 title: Why We Built The Cure Engine
-author: Myron S.
+author: "Myron "
 date: 2025-04-02T02:01:00.000Z
 tags:
   - PediatricCancer
