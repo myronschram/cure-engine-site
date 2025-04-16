@@ -39,8 +39,7 @@ recognize non-obvious relationships between input variables like CAR binding
 affinity, tumor microenvironment characteristics, and T-cell exhaustion
 thresholds.
 
-![Alt text goes here](/uploads/Engineering _a_Learning_System.png)
-![Alt text goes here](/uploads/Engineering _a_Learning_System.png)
+![Alt text goes here](/uploads/engineering-_a_learning_system.png)
 
 ## Millions of Iterations, Hundreds of
 Permutations Per Case
