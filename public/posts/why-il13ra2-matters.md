@@ -1,8 +1,11 @@
 ---
-title: "Why IL13Rα2 Matters"
-date: "2025-04-01"
-author: "Myron Schram"
-tags: [science, protocol, CAR-T]
+title: Why IL13Rα2 Matters
+author: Myron
+date: 2025-04-01
+tags:
+  - science
+  - protocol
+  - CAR-T
 ---
 
 IL13Rα2 is a promising target in pediatric brain cancer treatment.
