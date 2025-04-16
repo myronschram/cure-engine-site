@@ -1,0 +1,46 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "public/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Author"
+        name: "author"
+        widget: "string"
+        default: "Myron Schram"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        default: 
+          - PediatricCancer
+          - CAR_TCellTherapy
+          - BrainTumorAwareness
+          - ChildhoodCancer
+          - NonprofitStartup
+          - CureEngine
+          - MedicalInnovation
+          - AIInHealthcare
+          - ParentDrivenScience
+          - EngineeringForGood
+          - HunterStrong
+          - HopeThroughScience
+          - Immunotherapy
+          - GliomaResearch
+      - label: "Body"
+        name: "body"
+        widget: "markdown"
+   
