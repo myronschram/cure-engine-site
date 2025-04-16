@@ -40,6 +40,7 @@ affinity, tumor microenvironment characteristics, and T-cell exhaustion
 thresholds.
 
 ![Alt text goes here](/uploads/Engineering _a_Learning_System.png)
+![Alt text goes here](/uploads/Engineering _a_Learning_System.png)
 
 ## Millions of Iterations, Hundreds of
 Permutations Per Case
