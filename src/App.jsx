@@ -1,13 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./Home.jsx";
 import HunterStory from "./HunterStory.jsx";
-import Blog from "./Blog.jsx";
-import BlogPost from "./BlogPost.jsx";
+import Blog from './pages/Blog.jsx';
+import BlogPost from './pages/BlogPost.jsx';
 import Navbar from "./Navbar.jsx";
 import Footer from "./Footer";
 import Archive from "./Archive";
 import NotFound from "./NotFound";
+import "./utils/loadPosts";
+
+
 
 
 export default function App() {

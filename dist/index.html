@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cure Engine</title>
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#000000" />
+    
+    <!-- SEO -->
+    <meta name="description" content="The Cure Engine is a nonprofit using CAR T-cell therapy to fight childhood brain cancer." />
+    <meta name="keywords" content="pediatric brain cancer, CAR T-cell, IL13Rα2, nonprofit, childhood cancer cure, diffuse midline glioma" />
+    <meta name="author" content="The Cure Engine" />
+
+    <!-- Open Graph (Facebook, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="The Cure Engine" />
+    <meta property="og:description" content="A nonprofit revolutionizing pediatric brain cancer treatment through IL13Rα2-targeted CAR T-cell therapy." />
+    <meta property="og:image" content="/hunter.jpg" />
+    <meta property="og:url" content="https://cureengine.org/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Cure Engine" />
+    <meta name="twitter:description" content="Join the mission to eradicate childhood brain cancer through groundbreaking CAR T-cell research." />
+    <meta name="twitter:image" content="/hunter.jpg" />
+
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXHPC2RCVM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXHPC2RCVM');
+    </script>
+    <script type="module" crossorigin src="/assets/index-BMw1-q0_.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Csc_mQbM.css">
+  </head>
+  <body class="m-0">
+    <div id="root"></div>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            const hash = window.location.hash;
+            if (hash.includes("recovery_token") || hash.includes("invite_token")) {
+              window.location.replace("/admin/" + hash);
+            }
+          }
+        });
+        window.netlifyIdentity.init();
+      }
+    </script>
+  </body>
+</html>

@@ -9,7 +9,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#000000" />
-	<!-- SEO -->
+    
+    <!-- SEO -->
     <meta name="description" content="The Cure Engine is a nonprofit using CAR T-cell therapy to fight childhood brain cancer." />
     <meta name="keywords" content="pediatric brain cancer, CAR T-cell, IL13Rα2, nonprofit, childhood cancer cure, diffuse midline glioma" />
     <meta name="author" content="The Cure Engine" />
@@ -27,9 +28,32 @@
     <meta name="twitter:description" content="Join the mission to eradicate childhood brain cancer through groundbreaking CAR T-cell research." />
     <meta name="twitter:image" content="/hunter.jpg" />
 
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXHPC2RCVM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXHPC2RCVM');
+    </script>
   </head>
   <body class="m-0">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            const hash = window.location.hash;
+            if (hash.includes("recovery_token") || hash.includes("invite_token")) {
+              window.location.replace("/admin/" + hash);
+            }
+          }
+        });
+        window.netlifyIdentity.init();
+      }
+    </script>
   </body>
 </html>
