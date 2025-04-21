@@ -39,7 +39,7 @@ Inspired by population-level immunogenomics studies, these profiles serve as the
 - **Technique:** Statistical bootstrapping and multivariate distribution sampling
 - **Key Paper:** [Li et al., 2018](https://www.nature.com/articles/s41467-018-06654-6), which discusses synthetic cohort generation in oncology
 - **Application:** Improves generalizability of predicted outcomes and reveals edge-case risks
-
+                          
 ![Synthetic Patient Generation](/uploads/synthetic-patient-generation.png)
 *Illustration: Scatter plot showing synthetic patient profiles with tumor burden and immune status mapped across HLA *
 ---
