@@ -47,3 +47,12 @@ body {
 .commentbox .commentbox-footer {
   color: rgba(255, 255, 255, 0.3) !important;
 }
+
+/* === Cure Engine Blog Image Style === */
+.small-figure {
+  width: 25%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+}
