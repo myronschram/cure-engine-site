@@ -40,7 +40,7 @@ Inspired by population-level immunogenomics studies, these profiles serve as the
 - **Technique:** Statistical bootstrapping and multivariate distribution sampling
 - **Key Paper:** [Li et al., 2018](https://www.nature.com/articles/s41467-018-06654-6), which discusses synthetic cohort generation in oncology
 - **Application:** Improves generalizability of predicted outcomes and reveals edge-case risks
-
+public/uploads/synthetic-patient-generation-process.png
 ![Synthetic Patient Generation Process](/uploads/synthetic-patient-generation-process.png)  
 *Diagram: Statistical sampling and genetic variability algorithms generate synthetic patient profiles for downstream CAR T-cell simulations*
 
