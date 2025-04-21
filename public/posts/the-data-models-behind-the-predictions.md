@@ -119,6 +119,9 @@ The scale of our simulations—billions of permutations—requires stochastic sa
 
 As new data becomes available, our models are retrained using reinforcement learning and statistical feedback loops.
 
+![Monte Carlo Simulation and Model Retraining](/uploads/monte-carlo-model-retraining.png)  
+*Diagram: Simulation and retraining loop powered by Monte Carlo sampling, predictive scoring, and data-driven feedback refinement*
+
 - **Techniques:** Bayesian optimization, multistage Monte Carlo trials
 - **Reference:** [Metropolis & Ulam (1949)](https://www.tandfonline.com/doi/abs/10.1080/01621459.1949.10483310)
 
