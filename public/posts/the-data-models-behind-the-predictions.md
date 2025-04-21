@@ -59,6 +59,8 @@ We don’t just simulate patients—we simulate the treatment itself. Each CAR (
 
 We rely on protein folding models and AI-driven affinity prediction tools like [Rosetta](https://www.rosettacommons.org/) and AlphaFold to simulate how each construct interacts with target antigens in different environments.
 
+![CAR Construct Simulation – Structure–Function Modeling](/uploads/car-construct-simulation-diagram.png)  
+*Diagram: CAR receptor structure mapped to four simulation focus areas—binding affinity, off-target risk, trafficking, and co-stimulatory synergy*
 - **Reference:** [Majzner & Mackall (2019)](https://www.nature.com/articles/s41591-019-0564-6)
 - **Use Case:** Predicting which CAR backbone designs are least prone to exhaustion or cytokine release
 
