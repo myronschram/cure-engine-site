@@ -25,7 +25,8 @@ This foundational layer of modeling helps us avoid treatment failure due to anti
 
 - **Techniques:** Variant calling, epitope clustering, transcriptomic filtering
 - **Use Case:** Selectively filtering low-expression antigens to avoid off-tumor toxicity
-![Tumor Genomics and Antigen Mapping](/uploads/tumor-genomics-antigen-map.png)
+
+![Tumor Genomics and Antigen Mapping](/uploads/tumor-genomics-antigen-map.png)  
 *Illustration: Mutations within the nucleus and surface antigen markers with immunogenicity labels*
 
 ---
@@ -40,8 +41,12 @@ Inspired by population-level immunogenomics studies, these profiles serve as the
 - **Key Paper:** [Li et al., 2018](https://www.nature.com/articles/s41467-018-06654-6), which discusses synthetic cohort generation in oncology
 - **Application:** Improves generalizability of predicted outcomes and reveals edge-case risks
 
-![Synthetic Patient Generation](/uploads/synthetic-patient-generation.png)
-*Illustration: Scatter plot showing synthetic patient profiles with tumor burden and immune status mapped across HLA *
+![Synthetic Patient Generation Process](/uploads/synthetic-patient-generation-process.png)  
+*Diagram: Statistical sampling and genetic variability algorithms generate synthetic patient profiles for downstream CAR T-cell simulations*
+
+![Synthetic Patient Generation](/uploads/synthetic-patient-generation.png)  
+*Scatterplot: Synthetic patient profiles showing tumor burden and immune status mapped across HLA diversity*
+
 ---
 
 ## CAR Construct Simulation: Structure–Function Modeling
