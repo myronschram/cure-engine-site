@@ -131,6 +131,9 @@ As new data becomes available, our models are retrained using reinforcement lear
 
 The Cure Engine is not a black box—it’s a living, evolving system of data-driven models built for transparency, accuracy, and safety. By deeply integrating biological, structural, and computational models, we’re forging a new path in pediatric cancer treatment—one that adapts in real time and brings therapies closer to the bedside with every simulated trial.
 
+![Adaptive Simulation Feedback Loop](/uploads/adaptive-simulation-feedback-loop.png)  
+*Diagram: Multi-model simulation layers feeding into an adaptive learning loop powered by feedback from real-world and virtual outcomes*
+
 ---
 
 ## References and Further Reading
