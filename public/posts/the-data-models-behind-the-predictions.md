@@ -64,6 +64,9 @@ We rely on protein folding models and AI-driven affinity prediction tools like [
 
 ---
 
+<img src="/uploads/car-construct-simulation-diagram.png" class="small-figure" alt="CAR Construct Simulation – Structure–Function Modeling">
+*Diagram: CAR receptor structure mapped to four simulation focus areas*
+
 ## Agent-Based and PK/PD Simulation Logic
 
 The immune system behaves like an ecosystem. To capture that complexity, we deploy agent-based simulations where each CAR T-cell, tumor cell, and immune cell is an autonomous agent following biochemical rules.
@@ -94,6 +97,9 @@ We blend methods like random forests, XGBoost, and deep neural networks to gener
 
 ---
 
+<img src="/uploads/ensemble-ml-outcome-prediction.png" class="small-figure" alt="Ensemble Machine Learning for Outcome Predictions">
+*Diagram: Ensemble ML pipeline showing multiple inputs to survival, relapse, and toxicity predictions*
+
 ## Predictive Toxicity Modeling
 
 Predicting efficacy is only half the equation. Safety must be modeled with equal rigor.
@@ -104,6 +110,9 @@ We’ve trained toxicity classifiers using clinical data on cytokine release syn
 - **Reference:** [FDA Predictive Toxicology Roadmap](https://www.fda.gov/science-research/about-science-research-fda/fdas-predictive-toxicology-roadmap)
 
 ---
+
+<img src="/uploads/predictive-toxicity-modeling.png" class="small-figure" alt="Predictive Toxicity Modeling">
+*Infographic: Simulation pipeline scoring CRS, ICANS, and off-tumor toxicity risks*
 
 ## Monte Carlo Simulation and Continuous Model Retraining
 
@@ -116,11 +125,17 @@ As new data becomes available, our models are retrained using reinforcement lear
 
 ---
 
+<img src="/uploads/monte-carlo-model-retraining.png" class="small-figure" alt="Monte Carlo Simulation and Model Retraining">
+*Diagram: Simulation and retraining loop powered by Monte Carlo sampling*
+
 ## Conclusion
 
 The Cure Engine is not a black box—it’s a living, evolving system of data-driven models built for transparency, accuracy, and safety. By deeply integrating biological, structural, and computational models, we’re forging a new path in pediatric cancer treatment—one that adapts in real time and brings therapies closer to the bedside with every simulated trial.
 
 ---
+
+<img src="/uploads/adaptive-simulation-feedback-loop.png" class="small-figure" alt="Adaptive Simulation Feedback Loop">
+*Diagram: Multi-model layers feeding into an adaptive learning loop powered by simulation feedback*
 
 ## References and Further Reading
 
