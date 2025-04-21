@@ -25,7 +25,7 @@ This foundational layer of modeling helps us avoid treatment failure due to anti
 
 - **Techniques:** Variant calling, epitope clustering, transcriptomic filtering
 - **Use Case:** Selectively filtering low-expression antigens to avoid off-tumor toxicity
-![Tumor Genomics and Antigen Mapping](/posts/images/tumor-genomics-antigen-map.png)
+![Tumor Genomics and Antigen Mapping](public/uploads/tumor-genomics-antigen-map.png)
 *Illustration: Mutations within the nucleus and surface antigen markers with immunogenicity labels*
 
 ---
