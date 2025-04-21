@@ -91,6 +91,9 @@ All simulation outputs are scored using ensemble machine learning. These models 
 
 We blend methods like random forests, XGBoost, and deep neural networks to generate robust, multi-dimensional predictions for each simulated scenario.
 
+![Ensemble Machine Learning for Outcome Predictions](/uploads/ensemble-ml-outcome-prediction.png)  
+*Diagram: Ensemble ML pipeline showing multiple inputs flowing through stacked models to generate survival, relapse, and toxicity predictions*
+
 - **Key Algorithms:** Random Forests ([Breiman, 2001](https://link.springer.com/article/10.1023/A:1010933404324)), Gradient Boosting, TensorFlow-based CNNs
 - **Reference:** [Topol, E. (2019)](https://www.basicbooks.com/titles/eric-topol/deep-medicine/9781541644632/)
 
