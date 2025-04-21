@@ -105,6 +105,9 @@ Predicting efficacy is only half the equation. Safety must be modeled with equal
 
 We’ve trained toxicity classifiers using clinical data on cytokine release syndrome (CRS), neurotoxicity, and off-target effects. These models detect patterns where predicted outcomes indicate unacceptable safety risks—especially in pediatric immune systems.
 
+![Predictive Toxicity Modeling](/uploads/predictive-toxicity-modeling.png)  
+*Infographic: Simulation pipeline detecting and scoring CRS, ICANS, and off-tumor toxicity risks using AI-based predictive models*
+
 - **Data Sources:** FDA adverse event reports, pediatric trial archives
 - **Reference:** [FDA Predictive Toxicology Roadmap](https://www.fda.gov/science-research/about-science-research-fda/fdas-predictive-toxicology-roadmap)
 
