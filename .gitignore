@@ -1,2 +1,20 @@
-# Local Netlify folder
-.netlify
+# Netlify configuration
+.netlify/
+
+# Build output (ignored by default unless manually added)
+dist/
+
+# Exception: allow tracking specific blog posts or uploads manually
+!dist/posts/
+!dist/uploads/
+
+# But still ignore auto-generated manifest files and bulk Markdown
+dist/posts/manifest.json
+public/posts/manifest.json
+dist/posts/*.md
+
+# Ignore all uploads by default, but allow manually added ones
+dist/uploads/*
+!dist/uploads/*.png
+!dist/uploads/*.jpg
+!dist/uploads/*.svg
