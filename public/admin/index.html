@@ -13,70 +13,21 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      function showMessage(text, color = "red") {
-        const msg = document.createElement("p");
-        msg.textContent = text;
-        msg.style.color = color;
-        msg.style.textAlign = "center";
-        msg.style.marginTop = "2rem";
-        document.body.appendChild(msg);
-      }
-
-      function initCMSIfAuthorized(user) {
-        if (!user) {
-          showMessage("⚠️ No user found.");
-          console.warn("No user object received.");
-          return;
-        }
-
-        console.log("Netlify Identity user:", user);
-
-        const roles = user.app_metadata && user.app_metadata.roles;
-        if (!Array.isArray(roles)) {
-          showMessage("⚠️ No roles found. Check Netlify Identity settings.");
-          console.warn("User has no roles:", roles);
-          return;
-        }
-
-        const hasAccess = roles.includes("admin");
-
-        if (hasAccess) {
-          const script = document.createElement("script");
-          script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
-          script.onload = () => console.log("✅ CMS loaded");
-          script.onerror = () => console.error("🔥 Failed to load Decap CMS");
-          document.body.appendChild(script);
-        } else {
-          showMessage("❌ You are logged in, but do not have CMS access (admin role required).");
-          console.error("User roles:", roles);
-        }
-      }
-
       window.addEventListener("load", () => {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", (user) => {
             if (!user) {
-              const hash = window.location.hash;
-              if (hash.includes("recovery_token") || hash.includes("invite_token")) {
-                window.location.replace("/admin/" + hash);
-              }
-            } else {
-              console.log("👤 User already logged in.");
-              initCMSIfAuthorized(user);
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
             }
           });
-
-          window.netlifyIdentity.on("login", (user) => {
-            console.log("👤 Logged in via widget.");
-            initCMSIfAuthorized(user);
-          });
-
           window.netlifyIdentity.init();
-        } else {
-          showMessage("❌ Netlify Identity failed to initialize.");
-          console.error("Netlify Identity widget not found.");
         }
       });
     </script>
+
+    <!-- Load Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
