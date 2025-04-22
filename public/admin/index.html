@@ -3,54 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <title>The Cure Engine CMS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" 
-	<meta name="referrer" content="same-origin" />
-  </head>
-  <body>
-    <div id="nc-root"></div>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>The Cure Engine CMS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="same-origin" />
   </head>
   <body>
     <div id="nc-root"></div>
-    <script>
-      if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", (user) => {
-          if (!user) {
-            const hash = window.location.hash;
-            if (hash.includes("recovery_token") || hash.includes("invite_token")) {
-              window.location.replace("/admin/" + hash);
-            }
-          }
-        });
-        window.netlifyIdentity.init();
-      }
-</script>
 
     <!-- Load Netlify Identity Widget -->
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      window.netlifyIdentity = window.netlifyIdentity || {};
-      netlifyIdentity.on("init", (user) => {
-        if (!user) {
-          const token = new URLSearchParams(window.location.hash).get("recovery_token");
-          if (token) {
-            netlifyIdentity.recover(token, true)
-              .then(() => console.log("✅ Recovery token accepted."))
-              .catch(err => console.error("❌ Error accepting recovery token:", err));
-          } else {
-            console.warn("⚠️ No recovery token found in URL.");
-          }
-        } else {
-          console.log("👤 User already logged in.");
+      // Wait for Netlify Identity Widget to load
+      window.addEventListener("load", () => {
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              const hash = window.location.hash;
+              if (hash.includes("recovery_token") || hash.includes("invite_token")) {
+                window.location.replace("/admin/" + hash);
+              }
+            } else {
+              console.log("👤 User already logged in.");
+            }
+          });
+
+          window.netlifyIdentity.on("login", () => {
+            document.location.href = "/admin/";
+          });
+
+          window.netlifyIdentity.init();
         }
       });
-      netlifyIdentity.init();
     </script>
 
     <!-- Load Decap CMS -->
@@ -58,17 +41,10 @@
       window.addEventListener("DOMContentLoaded", () => {
         const script = document.createElement("script");
         script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
-        script.onload = () => {
-          console.log("✅ CMS loaded");
-        };
-        script.onerror = () => {
-          console.error("🔥 Failed to load Decap CMS");
-        };
+        script.onload = () => console.log("✅ CMS loaded");
+        script.onerror = () => console.error("🔥 Failed to load Decap CMS");
         document.body.appendChild(script);
       });
     </script>
-  </body>
-</html>
-
   </body>
 </html>
