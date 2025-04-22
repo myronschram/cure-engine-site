@@ -1,9 +1,18 @@
 backend:
   name: git-gateway
   branch: main
+  identity_url: https://www.cureengine.org/.netlify/identity
+  gateway_url: https://www.cureengine.org/.netlify/git
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
+
+
+
+
+
+
+
 
 collections:
   - name: "blog"
