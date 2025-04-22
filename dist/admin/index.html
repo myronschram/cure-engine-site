@@ -13,7 +13,27 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <script>
-      // Wait for Netlify Identity Widget to load
+      function initCMSIfAuthorized(user) {
+        const roles = user && user.app_metadata && user.app_metadata.roles;
+        const hasAccess = roles && roles.includes("admin");
+
+        if (hasAccess) {
+          const script = document.createElement("script");
+          script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
+          script.onload = () => console.log("✅ CMS loaded");
+          script.onerror = () => console.error("🔥 Failed to load Decap CMS");
+          document.body.appendChild(script);
+        } else {
+          console.error("❌ You are logged in but do not have 'admin' role.");
+          const msg = document.createElement("p");
+          msg.textContent = "You are logged in, but do not have CMS access (admin role required).";
+          msg.style.color = "red";
+          msg.style.textAlign = "center";
+          msg.style.marginTop = "2rem";
+          document.body.appendChild(msg);
+        }
+      }
+
       window.addEventListener("load", () => {
         if (window.netlifyIdentity) {
           window.netlifyIdentity.on("init", (user) => {
@@ -24,26 +44,17 @@
               }
             } else {
               console.log("👤 User already logged in.");
+              initCMSIfAuthorized(user);
             }
           });
 
-          window.netlifyIdentity.on("login", () => {
-            document.location.href = "/admin/";
+          window.netlifyIdentity.on("login", (user) => {
+            console.log("👤 Logged in via widget.");
+            initCMSIfAuthorized(user);
           });
 
           window.netlifyIdentity.init();
         }
-      });
-    </script>
-
-    <!-- Load Decap CMS -->
-    <script>
-      window.addEventListener("DOMContentLoaded", () => {
-        const script = document.createElement("script");
-        script.src = "https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js";
-        script.onload = () => console.log("✅ CMS loaded");
-        script.onerror = () => console.error("🔥 Failed to load Decap CMS");
-        document.body.appendChild(script);
       });
     </script>
   </body>
