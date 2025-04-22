@@ -3,16 +3,11 @@ backend:
   branch: main
   identity_url: https://www.cureengine.org/.netlify/identity
   gateway_url: https://www.cureengine.org/.netlify/git
+  identity_roles:
+    - admin
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
-
-
-
-
-
-
-
 
 collections:
   - name: "blog"
@@ -52,4 +47,3 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-   
