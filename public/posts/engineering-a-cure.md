@@ -1,5 +1,5 @@
 ---
-title: Engineering a Cure
+title: 1. Engineering a Cure
 author: Myron
 date: 2025-04-16T21:51:00.000Z
 tags:
