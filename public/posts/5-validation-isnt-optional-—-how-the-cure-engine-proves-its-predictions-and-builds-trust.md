@@ -2,7 +2,7 @@
 title: 5. Validation Isn't Optional — How The Cure Engine Proves Its Predictions
   and Builds Trust
 author: Myron
-date: 2025-04-23T20:46:00.000Z
+date: 2025-04-23T17:46:00.000Z
 tags:
   - validation
   - audit-trail
