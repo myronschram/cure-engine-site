@@ -53,7 +53,7 @@ The goal isn’t to build a single CAR T-cell protocol. It’s to build a **livi
 
 We’re building something we can improve over time. A digital foundation for future cures.
 
-![Platform vs Protocol Comparison](/uploads/Platform_vs_Protocol_Comparison_Transparent.jpg)
+![Platform vs Protocol Comparison](/uploads/Platform_vs_Protocol_Comparison_Transparent.png)
 
 ### What Comes Next
 In the next post, we’ll break down the specific machine learning models that make this possible. From ensemble predictors to neural networks to time-series simulations-each piece plays a role in making The Cure Engine a reality.
