@@ -45,7 +45,7 @@ Once a prediction is made, it doesn’t sit idle. Every real-world result-positi
 
 This feedback system helps us avoid the flatline problem many AI models face. Ours gets smarter every time it’s wrong-and sharper every time it’s right.
 
-![Feedback Loop Detailed Diagram](/uploads/Feedback_Loop_Detailed_Diagram_Transparent.jpg)
+![Feedback Loop Detailed Diagram](/uploads/Feedback_Loop_Detailed_Diagram_Transparent.png)
 
 
 ### A Platform, Not Just a Protocol
