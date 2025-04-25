@@ -30,41 +30,41 @@ We didn’t guess at what might work. We built simulation pipelines that modeled
 - Dose timing and exhaustion dynamics
 
 In total, we’ve run over **10 million** iterations across **hundreds of permutations per scenario** to explore every plausible treatment path. Each run adds to our understanding. Each edge case is logged, rerun, and either eliminated or explored further.
-![Simulation Scale Permutation Diagram](/uploads/Simulation_Scale_Permutation_Diagram_Transparent.png)
 
-![Simulation Process Diagram](/uploads/Simulation_Process_Diagram_Transparent.png)
+<img src="/uploads/Simulation_Scale_Permutation_Diagram_Transparent.png" class="small-figure" alt="Simulation Scale Permutation Diagram">
+
+<img src="/uploads/Simulation_Process_Diagram_Transparent.png" class="small-figure" alt="Simulation Process Diagram">
 
 ### Feedback That Teaches
 Once a prediction is made, it doesn’t sit idle. Every real-world result-positive or negative-is logged and used to retrain the model. We built a closed-loop system:
 
-1. Simulate the treatment
-2. Predict response and risk
-3. Administer therapy (or test in silico)
-4. Capture results
-5. Update the model
+1. Simulate the treatment  
+2. Predict response and risk  
+3. Administer therapy (or test in silico)  
+4. Capture results  
+5. Update the model  
 
 This feedback system helps us avoid the flatline problem many AI models face. Ours gets smarter every time it’s wrong-and sharper every time it’s right.
 
-![Feedback Loop Detailed Diagram](/uploads/Feedback_Loop_Detailed_Diagram_Transparent.png)
-
+<img src="/uploads/Feedback_Loop_Detailed_Diagram_Transparent.png" class="small-figure" alt="Feedback Loop Detailed Diagram">
 
 ### A Platform, Not Just a Protocol
 The goal isn’t to build a single CAR T-cell protocol. It’s to build a **living platform** that can adapt to different tumor genotypes, patient profiles, and new scientific discoveries.
 
 We’re building something we can improve over time. A digital foundation for future cures.
 
-![Platform vs Protocol Comparison](/uploads/Platform_vs_Protocol_Comparison_Transparent.png)
+<img src="/uploads/Platform_vs_Protocol_Comparison_Transparent.png" class="small-figure" alt="Platform vs Protocol Comparison">
 
 ### What Comes Next
 In the next post, we’ll break down the specific machine learning models that make this possible. From ensemble predictors to neural networks to time-series simulations-each piece plays a role in making The Cure Engine a reality.
 
 This is just the beginning.
 
-![Engineering the Cure Concept](/uploads/Engineering_the_Cure_Concept_Transparent.png)
+<img src="/uploads/Engineering_the_Cure_Concept_Transparent.png" class="small-figure" alt="Engineering the Cure Concept">
 
 ### Citations
-1. Majzner RG et al. Tuning the IL13Rα2 CAR T-cell for pediatric gliomas. *Cell Reports Medicine*. https://doi.org/10.1016/j.xcrm.2022.100604
-2. Sahoo P et al. Mathematical deconvolution of CAR T-cell dynamics. *Nature Communications*. https://doi.org/10.1038/s41467-020-19957-w
-3. U.S. National Library of Medicine – ClinicalTrials.gov: NCT02208362
-4. Project ARROW. Adaptive Research and Response Optimization Workgroup, NIH & Children’s Oncology Group, 2021
-5. Miotto R et al. Deep learning for healthcare: review, opportunities and challenges. *Briefings in Bioinformatics*. https://doi.org/10.1093/bib/bbx044
+1. Majzner RG et al. Tuning the IL13Rα2 CAR T-cell for pediatric gliomas. *Cell Reports Medicine*. https://doi.org/10.1016/j.xcrm.2022.100604  
+2. Sahoo P et al. Mathematical deconvolution of CAR T-cell dynamics. *Nature Communications*. https://doi.org/10.1038/s41467-020-19957-w  
+3. U.S. National Library of Medicine – ClinicalTrials.gov: NCT02208362  
+4. Project ARROW. Adaptive Research and Response Optimization Workgroup, NIH & Children’s Oncology Group, 2021  
+5. Miotto R et al. Deep learning for healthcare: review, opportunities and challenges. *Briefings in Bioinformatics*. https://doi.org/10.1093/bib/bbx044  
