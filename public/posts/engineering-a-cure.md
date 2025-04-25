@@ -32,7 +32,7 @@ We didn’t guess at what might work. We built simulation pipelines that modeled
 In total, we’ve run over **10 million** iterations across **hundreds of permutations per scenario** to explore every plausible treatment path. Each run adds to our understanding. Each edge case is logged, rerun, and either eliminated or explored further.
 ![Simulation Scale Permutation Diagram](/uploads/Simulation_Scale_Permutation_Diagram_Transparent.png)
 
-![Simulation Process Diagram](/uploads/Simulation_Process_Diagram_Transparent.jpg)
+![Simulation Process Diagram](/uploads/Simulation_Process_Diagram_Transparent.png)
 
 ### Feedback That Teaches
 Once a prediction is made, it doesn’t sit idle. Every real-world result-positive or negative-is logged and used to retrain the model. We built a closed-loop system:
