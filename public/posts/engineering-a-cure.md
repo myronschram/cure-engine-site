@@ -30,7 +30,7 @@ We didn’t guess at what might work. We built simulation pipelines that modeled
 - Dose timing and exhaustion dynamics
 
 In total, we’ve run over **10 million** iterations across **hundreds of permutations per scenario** to explore every plausible treatment path. Each run adds to our understanding. Each edge case is logged, rerun, and either eliminated or explored further.
-![Simulation Scale Permutation Diagram](/uploads/Simulation_Scale_Permutation_Diagram_Transparent.jpg)
+![Simulation Scale Permutation Diagram](/uploads/Simulation_Scale_Permutation_Diagram_Transparent.png)
 
 ![Simulation Process Diagram](/uploads/Simulation_Process_Diagram_Transparent.jpg)
 
