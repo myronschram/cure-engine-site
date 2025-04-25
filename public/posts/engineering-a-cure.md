@@ -60,7 +60,7 @@ In the next post, we’ll break down the specific machine learning models that m
 
 This is just the beginning.
 
-![Engineering the Cure Concept](/uploads/Engineering_the_Cure_Concept_Transparent.jpg)
+![Engineering the Cure Concept](/uploads/Engineering_the_Cure_Concept_Transparent.png)
 
 ### Citations
 1. Majzner RG et al. Tuning the IL13Rα2 CAR T-cell for pediatric gliomas. *Cell Reports Medicine*. https://doi.org/10.1016/j.xcrm.2022.100604
