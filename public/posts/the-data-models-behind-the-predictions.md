@@ -1,5 +1,6 @@
 ---
-title: 2. The Data Models Behind the Predictions
+title: "2. Engineering Predictive Models for Pediatric Cancer: The Data Science
+  Behind The Cure Engine"
 author: Myron
 date: 2025-04-21T02:38:00.000Z
 tags:
